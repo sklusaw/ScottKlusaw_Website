@@ -1,0 +1,52 @@
+/* =============================================================================
+   FUN PROJECTS LANDING PAGE STYLES
+   =============================================================================
+   Purpose: Styles for the fun projects section landing page
+   Dependencies: variables.css (must be loaded first for CSS custom properties)
+   Notes: Simple list-based layout with back navigation
+   ============================================================================= */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 40px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.back-link {
+  color: var(--text-secondary);
+  display: inline-block;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  margin-bottom: 15px;
+}
+
+.project-list a {
+  color: var(--primary-color);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.project-list a:hover {
+  color: var(--primary-hover);
+}

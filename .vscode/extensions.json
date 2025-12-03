@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "ritwickdey.liveserver",
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker",
+    "htmlhint.vscode-htmlhint"
+  ]
+}

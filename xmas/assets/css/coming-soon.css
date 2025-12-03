@@ -1,0 +1,34 @@
+/* =============================================================================
+   COMING SOON PAGE STYLES
+   =============================================================================
+   Purpose: Reusable styles for "Coming Soon" placeholder pages
+   Dependencies: variables.css (must be loaded first for CSS custom properties)
+   Notes: Centered layout with minimal content, can be used for any future year
+   ============================================================================= */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 40px;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.back-link {
+  color: var(--text-secondary);
+  display: inline-block;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+}

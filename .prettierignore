@@ -1,0 +1,14 @@
+# Ignore archived versions
+archive/
+
+# Ignore vendor/minified files
+vendor/
+**/*.min.js
+**/*.min.css
+
+# Ignore dependencies
+node_modules/
+
+# Ignore build output
+dist/
+build/

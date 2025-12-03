@@ -1,0 +1,21 @@
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jquery": true
+  },
+  "globals": {
+    "YT": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "script"
+  },
+  "rules": {
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-unused-vars": "warn",
+    "no-console": "off"
+  }
+}

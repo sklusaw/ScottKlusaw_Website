@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun Dating Sim</title>
+    <link rel="stylesheet" href="assets/css/dating-sim.css" />
+  </head>
+  <body>
+    <a class="back-link" href="../index.html">← Back to Fun Projects</a>
+
+    <!-- Opening Screen -->
+    <div id="opening-screen">
+      <div id="title">Welcome to Crazy Love!</div>
+      <button id="start-btn">Start Game</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen">
+      <div class="character" id="character-name">...</div>
+      <div class="dialogue" id="dialogue-text">Welcome to the dating sim!</div>
+      <div id="options"></div>
+      <img id="character-image" src="about:blank" alt="Character Image" style="display: none" />
+      <div id="relationship-status">Relationship: 0</div>
+    </div>
+
+    <!-- Final Screen -->
+    <div id="final-screen">
+      <div class="character" id="final-character-name"></div>
+      <div class="dialogue" id="final-dialogue-text"></div>
+    </div>
+
+    <script src="assets/js/game-data.js"></script>
+    <script src="assets/js/game-engine.js"></script>
+  </body>
+</html>

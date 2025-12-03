@@ -1,0 +1,70 @@
+/* ============================================================================
+   CSS Custom Properties (Variables)
+   ============================================================================
+   This file defines all color, typography, and spacing variables used
+   throughout the website. All pages must link to this file to ensure
+   consistent theming across the entire site.
+   ========================================================================== */
+
+:root {
+  /* Colors - Primary Palette
+     ========================================================================== */
+  --primary-color: #00b4d9;
+  --primary-hover: #21cff3;
+  --primary-overlay: rgba(0, 180, 217, 0.6);
+  --danger-color: #dc3545;
+  --danger-hover: #f55262;
+
+  /* Colors - Backgrounds
+     ========================================================================== */
+  --dark-bg: #1c1c20;
+  --dark-bg-alt: #252525;
+  --dark-bg-secondary: #333;
+  --dark-bg-hero: #0c0808;
+  --gray-lightest: #f0f0f0;
+  --gray-light: #f2f2f2;
+  --gray-medium: #e1e1e1;
+  --gray-medium-alt: #ededed;
+  --gray-border: #f1f1f1;
+  --gray-dark: #ddd;
+  --gray-darker: #e6e6e6;
+  --overlay-dark: rgba(0, 0, 0, 0.5);
+  --overlay-dark-light: rgba(0, 0, 0, 0.6);
+  --overlay-light: rgba(255, 255, 255, 0.2);
+  --mobile-menu-highlight: #e91e63;
+  --mobile-menu-hover: #f8f9fa;
+
+  /* Colors - Text
+     ========================================================================== */
+  --text-primary: #252525;
+  --text-secondary: #666;
+  --text-light: #888;
+  --text-dark: #333;
+  --text-darker: #040404;
+  --white: #fff;
+  --black: #000;
+
+  /* Colors - Social Media
+     ========================================================================== */
+  --facebook: #3b5999;
+  --twitter: #4a9cec;
+  --instagram: #d6274d;
+  --linkedin: #1260a2;
+  --google: #ce332a;
+  --github: #333;
+
+  /* Typography
+     ========================================================================== */
+  --font-primary: 'Source Sans Pro', sans-serif;
+  --font-script: 'Shadows Into Light', cursive;
+
+  /* Shadows
+     ========================================================================== */
+  --shadow-light: 0 6px 22px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  --shadow-strong: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  --shadow-nav: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+  --shadow-dropdown: 0 6px 12px rgba(0, 0, 0, 0.175);
+  --shadow-button: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  --shadow-light-border: 0 0 30px #ededed;
+}

@@ -1,0 +1,52 @@
+/* =============================================================================
+   CHRISTMAS LETTERS LANDING PAGE STYLES
+   =============================================================================
+   Purpose: Styles for the Christmas letters archive landing page
+   Dependencies: variables.css (must be loaded first for CSS custom properties)
+   Notes: Simple year list layout with back navigation
+   ============================================================================= */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 40px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.back-link {
+  color: var(--text-secondary);
+  display: inline-block;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+}
+
+.year-list {
+  list-style: none;
+  padding: 0;
+}
+
+.year-list li {
+  margin-bottom: 15px;
+}
+
+.year-list a {
+  color: var(--primary-color);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.year-list a:hover {
+  color: var(--primary-hover);
+}
