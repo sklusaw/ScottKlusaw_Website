@@ -1,0 +1,73 @@
+/**
+ * ========================================================================
+ * SERVICES PAGE STYLES
+ * ========================================================================
+ * Services section background, individual service items, icons, and hover effects.
+ * Includes service card styling and interactive hover states.
+ */
+
+/**
+ * Services Section Container
+ * ========================================================================
+ */
+.services {
+  background: var(--gray-lightest);
+}
+
+/**
+ * Individual Service Item Card
+ * ========================================================================
+ */
+.services-item {
+  background: var(--white);
+  border-radius: 4px;
+  padding: 48px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.services-item .icon i {
+  font-size: 42px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 48px;
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  color: var(--primary-color);
+}
+
+/**
+ * Service Item Content & Title
+ * ========================================================================
+ */
+.services-item .services-content h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.services-item .services-content h3 a {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.services-item .services-content h3 a:hover {
+  color: var(--primary-color);
+}
+
+.services-item .services-content p {
+  line-height: 22px;
+}
+
+/**
+ * Service Item Hover Effect
+ * ========================================================================
+ */
+.services-item:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}

@@ -18,6 +18,9 @@
     /*
    MixitUp
    ========================================================================== */
+    // POSSIBLY UNUSED: No .mix filter items found in #portfolio section
+    // This plugin is loaded but has no elements to filter
+    // Safe to remove if portfolio filtering not planned
     $('#portfolio').mixItUp();
 
     /*
@@ -65,6 +68,9 @@
 
     /* Nivo Lightbox
     ========================================================*/
+    // POSSIBLY UNUSED: No elements with .lightbox class found in HTML
+    // This plugin is loaded but no images use the lightbox class
+    // Safe to remove if image lightbox functionality not needed
     $('.lightbox').nivoLightbox({
       effect: 'fadeScale',
       keyboardNav: true,
@@ -72,6 +78,9 @@
 
     /* Counter
     ========================================================*/
+    // POSSIBLY UNUSED: No elements with .counterUp class found in HTML
+    // This plugin is loaded but no counters use the animation class
+    // Safe to remove if number animations not needed
     $('.counterUp').counterUp({
       delay: 10,
       time: 1000,

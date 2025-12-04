@@ -9,5 +9,14 @@
     "color-function-notation": "legacy",
     "alpha-value-notation": "number"
   },
-  "ignoreFiles": ["vendor/**", "**/*.min.css", "node_modules/**", "archive/**"]
+  "ignoreFiles": [
+    "vendor/**",
+    "**/*.min.css",
+    "node_modules/**",
+    "archive/**",
+    "assets/css/core/**",
+    "assets/css/layout/**",
+    "assets/css/components/**",
+    "assets/css/pages/**"
+  ]
 }

@@ -1,0 +1,81 @@
+/**
+ * ========================================================================
+ * FORMS COMPONENT STYLES
+ * ========================================================================
+ * Form controls, input fields, validation messages, and contact forms.
+ * Includes styling for buttons, text inputs, and form containers.
+ */
+
+/**
+ * Form Control Base Styles
+ * ========================================================================
+ */
+.form-control {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 8px 10px;
+  border: 1px solid var(--gray-medium);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/**
+ * Disabled Button States
+ * ========================================================================
+ */
+.btn.disabled,
+.btn:disabled {
+  opacity: 1;
+}
+
+/**
+ * Contact Form Area
+ * ========================================================================
+ */
+.contact-form-area {
+  background: var(--white);
+  box-shadow: 0 0 30px var(--gray-medium-alt);
+  padding: 60px 40px;
+}
+
+.contact-form-area h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/**
+ * Contact Section
+ * ========================================================================
+ */
+#contact {
+  position: relative;
+  overflow: hidden;
+}
+
+#contact #contactForm {
+  margin-top: 30px;
+}
+
+/**
+ * Map Container
+ * ========================================================================
+ */
+#conatiner-map {
+  margin-top: 30px;
+  text-align: center;
+  background-color: var(--white);
+  height: 370px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 101;
+  width: 100%;
+}

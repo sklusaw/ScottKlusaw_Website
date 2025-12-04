@@ -1,0 +1,135 @@
+/**
+ * ========================================================================
+ * FOOTER LAYOUT STYLES
+ * ========================================================================
+ * Footer navigation, branding, contact information, and copyright section.
+ * Includes responsive footer layout and styling.
+ */
+
+/**
+ * Footer Area Container
+ * ========================================================================
+ */
+.footer-area {
+  background: var(--dark-bg);
+}
+
+.footer-area .footer-text p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: var(--white);
+}
+
+.footer-area .footer-text p a {
+  color: var(--primary-color);
+}
+
+.footer-area .footer-text .nav-inline .nav-link {
+  padding: 11px 7px;
+  color: var(--text-light);
+}
+
+.footer-area .footer-text .nav-inline .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/**
+ * Footer Secondary Section
+ * ========================================================================
+ */
+.footer-2 {
+  background: var(--text-primary);
+}
+
+.footer-2 img {
+  margin-top: -8px;
+}
+
+.footer-2 h3 {
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 700;
+  padding-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.footer-2 p {
+  font-size: 14px;
+  color: var(--white);
+  line-height: 20px;
+  margin: 0;
+  padding-right: 50px;
+}
+
+.footer-2 ul li a {
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.footer-2 ul li a:hover {
+  color: var(--primary-color);
+}
+
+/**
+ * Copyright Section
+ * ========================================================================
+ */
+#copyright {
+  background: var(--text-dark);
+}
+
+#copyright p {
+  line-height: 42px;
+  color: var(--white);
+  margin: 0;
+}
+
+#copyright p a {
+  color: var(--white);
+}
+
+#copyright p a:hover {
+  color: var(--primary-color);
+}
+
+/**
+ * Footer Contact Section
+ * ========================================================================
+ */
+.footer-right-contact {
+  padding: 4px;
+  border: 1px solid var(--gray-medium);
+  margin-top: 30px;
+}
+
+.footer-right-contact .single-contact {
+  margin: 10px 22px;
+  padding: 3px 55px;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.footer-right-contact .single-contact p {
+  margin-bottom: 5px;
+}
+
+.footer-right-contact .single-contact p a {
+  color: var(--text-secondary);
+}
+
+.footer-right-contact .contact-icon {
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 20px;
+  height: 40px;
+  left: 0;
+  padding-top: 8px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40px;
+}

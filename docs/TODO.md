@@ -8,57 +8,6 @@ This file tracks ongoing and future tasks for the website refactoring project.
 
 ## 🚧 In Progress
 
-### Git & GitHub Setup (PRIORITY)
-
-**Goal:** Configure Git to push to personal GitHub account (separate from work credentials)
-
-**Documentation:** [GIT_SETUP_GUIDE.md](./GIT_SETUP_GUIDE.md)
-
-**Tasks:**
-
-- [ ] **Choose authentication method**
-  - Option A: HTTPS with Personal Access Token (simpler, 10 minutes)
-  - Option B: SSH keys with config (more secure, 20 minutes)
-
-- [ ] **Configure repository-specific Git identity**
-
-  ```powershell
-  git config user.email "your-personal-email@example.com"
-  git config user.name "Scott Klusaw"
-  ```
-
-- [ ] **Set up GitHub remote**
-
-  ```powershell
-  # Check if remote exists
-  git remote -v
-
-  # Add or update remote URL
-  git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
-  # OR
-  git remote set-url origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
-  ```
-
-- [ ] **Generate GitHub Personal Access Token** (if using HTTPS)
-  - Go to GitHub Settings → Developer settings → Personal access tokens
-  - Generate new token (classic)
-  - Required scopes: `repo`, `workflow`
-  - Save token securely (can't retrieve again!)
-
-- [ ] **Test first push to personal GitHub**
-
-  ```powershell
-  git add .
-  git commit -m "feat: add modern dev setup and documentation"
-  git push -u origin main
-  ```
-
-- [ ] **Verify Husky pre-commit hooks work**
-  - Should automatically run linters on commit
-  - Commit blocked if linting fails
-
-**Estimated Time:** 15-30 minutes
-
 ---
 
 ### Dating Sim Testing
@@ -80,7 +29,7 @@ This file tracks ongoing and future tasks for the website refactoring project.
 
 ### Phase 3: Library Management
 
-- [ ] **Audit unused JavaScript libraries**
+- [x] **Audit unused JavaScript libraries**
   - Execute grep searches across all HTML files:
     - Search for: `mixItUp`, `.mix`, `#portfolio`
     - Search for: `lightbox`, `nivoLightbox`
@@ -98,7 +47,7 @@ This file tracks ongoing and future tasks for the website refactoring project.
 
 ### Phase 4: CSS Modularization (Ambitious)
 
-- [ ] **Split main.css into modular structure**
+- [x] **Split main.css into modular structure**
   - Create directory structure:
     - `assets/css/core/` (typography.css, utilities.css)
     - `assets/css/layout/` (navigation.css, hero.css, footer.css)
@@ -124,10 +73,18 @@ This file tracks ongoing and future tasks for the website refactoring project.
   - Include code examples for each component
 
 - [ ] **Performance Optimization**
-  - Run Lighthouse audit
-  - Optimize image sizes
-  - Evaluate CSS @import performance impact
-  - Consider adding build step if metrics indicate need
+  - [x] Audit image optimization opportunities
+    - Created IMAGE_OPTIMIZATION_AUDIT.md with detailed analysis
+    - Identified 4 KB (62%) potential savings through compression
+    - Critical items: hero images (2.5 MB), show-pics/2.jpg (622 KB)
+  - [x] Evaluate CSS @import performance impact
+    - Created CSS_PERFORMANCE_EVALUATION.md with analysis
+    - Conclusion: @import approach is safe and optimal
+    - CSS parsing time negligible (~5ms) compared to image loading
+    - Recommendation: Keep current structure; no build step needed
+  - [ ] Run Lighthouse audit (after images optimized)
+  - [ ] Optimize image sizes (Critical priority items)
+  - [ ] Consider adding build step (only if metrics indicate need)
 
 - [ ] **Content Updates**
   - Portfolio restoration (if applicable)
@@ -242,11 +199,22 @@ This file tracks ongoing and future tasks for the website refactoring project.
 - ✅ Component documentation (JSDoc) complete
 - ⏳ COMPONENT_GUIDE.md pending (future)
 
+**CSS Modularization (Phase 4):** ✅ COMPLETE
+
+- ✅ Created modular directory structure (core, layout, components, pages)
+- ✅ Extracted typography and utilities to core/
+- ✅ Extracted navigation, hero, footer to layout/
+- ✅ Extracted social-icons, slideshow, timeline, portfolio, forms to components/
+- ✅ Extracted about and services page styles to pages/
+- ✅ Created main.css manifest with @import in correct cascade order
+- ✅ Added comprehensive documentation to each module
+- ⏳ Awaiting manual testing to verify no style regressions
+
 **Remaining Work:**
 
-- Library audit and cleanup (Phase 3)
-- Main CSS modularization (Phase 4 - ambitious)
+- Phase 3: jQuery version upgrade evaluation
 - AWS deployment setup (user manual steps)
+- Performance optimization & Lighthouse audit
 
 ### Reference Documents
 

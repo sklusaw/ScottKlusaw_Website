@@ -29,12 +29,33 @@ ScottKlusaw_Website/
 ├── assets/                       # SHARED resources used by multiple pages
 │   ├── css/
 │   │   ├── variables.css         # CSS custom properties (MUST BE FIRST)
-│   │   ├── bootstrap.min.css
-│   │   ├── main.css
-│   │   ├── responsive.css
+│   │   ├── main.css              # CSS manifest (@import manifest loading modular CSS)
+│   │   ├── main-old.css          # Original monolithic CSS (backup)
+│   │   ├── responsive.css        # Responsive breakpoints
 │   │   ├── animate.css
+│   │   ├── bootstrap.min.css
 │   │   ├── nivo-lightbox.css
-│   │   └── slicknav.css
+│   │   ├── slicknav.css
+│   │   │
+│   │   ├── core/                 # CORE STYLES - Base typography, utilities
+│   │   │   ├── typography.css    # Font definitions, heading/body/link styles
+│   │   │   └── utilities.css     # Buttons, spacing, loader, back-to-top
+│   │   │
+│   │   ├── layout/               # LAYOUT STYLES - Page structure & major sections
+│   │   │   ├── navigation.css    # Navbar, dropdowns, mobile menu
+│   │   │   ├── hero.css          # Hero section, background, overlay
+│   │   │   └── footer.css        # Footer, copyright, contact section
+│   │   │
+│   │   ├── components/           # COMPONENT STYLES - Reusable UI components
+│   │   │   ├── social-icons.css  # Social media icon styling & hover effects
+│   │   │   ├── slideshow.css     # Image carousel, navigation, animations
+│   │   │   ├── timeline.css      # Timeline with milestones and cards
+│   │   │   ├── portfolio.css     # Portfolio grid, filtering, hover overlays
+│   │   │   └── forms.css         # Form controls, inputs, contact forms
+│   │   │
+│   │   └── pages/                # PAGE-SPECIFIC STYLES - Unique page layouts
+│   │       ├── about.css         # About section, profile, counters
+│   │       └── services.css      # Services section and service items
 │   │
 │   ├── js/
 │   │   ├── components/           # Modular JavaScript components

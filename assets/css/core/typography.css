@@ -1,0 +1,149 @@
+/**
+ * ========================================================================
+ * TYPOGRAPHY CORE STYLES
+ * ========================================================================
+ * Base typography rules and font definitions.
+ * Includes heading styles, body text, links, and font family definitions.
+ */
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Sans+Pro:400,700');
+
+/**
+ * HTML & Body Base Styles
+ * ========================================================================
+ */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--white);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: var(--text-secondary);
+  line-height: 25px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow-x: hidden;
+}
+
+/**
+ * Heading Styles
+ * ========================================================================
+ */
+h1,
+h2,
+h3,
+h4 {
+  font-size: 38px;
+  font-weight: 700;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.script-font {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+/**
+ * Link Styles
+ * ========================================================================
+ */
+a {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a a:focus {
+  outline: none;
+}
+
+/**
+ * Paragraph & List Styles
+ * ========================================================================
+ */
+p {
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0px;
+  font-size: 14px;
+}
+
+ul,
+ol {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+/**
+ * Hero Text Styles
+ * ========================================================================
+ */
+.hero-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--white);
+  text-transform: capitalize;
+  line-height: 70px;
+  letter-spacing: 0.1rem;
+}
+
+.hero-sub-heading {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--gray-darker);
+  line-height: 45px;
+  letter-spacing: 0.1rem;
+}
+
+/**
+ * Section Title Styles
+ * ========================================================================
+ */
+.section-titile-bg {
+  display: inline;
+  font-size: 115px;
+  font-weight: 700;
+  height: 100%;
+  left: -173px;
+  opacity: 0.1;
+  position: absolute;
+  top: -14px;
+  width: 100%;
+  text-align: center;
+}
+
+.section-title-header p {
+  text: center;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 36px;
+}
+
+.section-title {
+  color: var(--text-primary);
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 48px;
+  padding: 0 10px;
+  position: relative;
+}

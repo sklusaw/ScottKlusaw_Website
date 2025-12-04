@@ -1,0 +1,60 @@
+/**
+ * ========================================================================
+ * SOCIAL ICONS COMPONENT STYLES
+ * ========================================================================
+ * Social media icon styling with hover effects for all platforms.
+ * Includes Facebook, Twitter, Instagram, LinkedIn, and Google.
+ */
+
+/**
+ * Social Icon List
+ * ========================================================================
+ */
+.social-icon li {
+  display: inline-block;
+}
+
+.social-icon li a {
+  color: var(--black);
+  background: var(--white);
+  width: 35px;
+  height: 35px;
+  line-height: 38px;
+  display: block;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 16px;
+  margin: 15px 6px 12px 6px;
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.social-icon li a:hover {
+  color: var(--white);
+}
+
+/**
+ * Platform-Specific Hover Effects
+ * ========================================================================
+ */
+.social-icon li .facebook:hover {
+  background: var(--facebook);
+}
+
+.social-icon li .twitter:hover {
+  background: var(--twitter);
+}
+
+.social-icon li .instagram:hover {
+  background: var(--instagram);
+}
+
+.social-icon li .linkedin:hover {
+  background: var(--linkedin);
+}
+
+.social-icon li .google:hover {
+  background: var(--google);
+}
