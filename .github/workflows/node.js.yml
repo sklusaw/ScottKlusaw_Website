@@ -26,7 +26,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-   # no node modules
-   # - run: npm ci
+    # no node modules folder
+    #- run: npm ci
     - run: npm run build --if-present
-    - run: npm test
+    # No test scripts
+    #- run: npm test
